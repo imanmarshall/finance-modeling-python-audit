@@ -47,3 +47,6 @@ if __name__ == "__main__":
     # 2. Calculate UFCF
     fcf = calculate_ufcf(500000, 0.21, 50000, 75000, 10000)
     print(f"Calculated Unlevered FCF: ${fcf:,.2f}")
+def calculate_roe(net_income: float, average_equity: float) -> float:
+    """Calculates Return on Equity (ROE) per US GAAP standards."""
+    return net_income / average_equity
